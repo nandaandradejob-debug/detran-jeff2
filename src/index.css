@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Jeff Veicular Design System — All colors HSL */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 208 74% 18%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 208 74% 18%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 208 74% 18%;
+
+    /* Deep navy #0D1B2A */
+    --primary: 208 74% 18%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Light gray #F4F6F9 */
+    --secondary: 213 27% 97%;
+    --secondary-foreground: 208 74% 18%;
+
+    --muted: 213 27% 97%;
+    --muted-foreground: 211 20% 40%;
+
+    /* Vibrant yellow-orange #F5A623 */
+    --accent: 36 91% 55%;
+    --accent-foreground: 208 74% 18%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 213 20% 90%;
+    --input: 213 20% 90%;
+    --ring: 36 91% 55%;
+
+    /* WhatsApp green */
+    --whatsapp: 142 70% 45%;
+    --whatsapp-foreground: 0 0% 100%;
+
+    /* Electric blue #1A73E8 */
+    --cta: 215 82% 51%;
+    --cta-foreground: 0 0% 100%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 208 74% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 208 74% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 208 74% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 208 74% 18%;
+
+    --secondary: 208 74% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 208 74% 15%;
+    --muted-foreground: 208 20% 65%;
+
+    --accent: 36 91% 55%;
+    --accent-foreground: 208 74% 18%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 208 74% 20%;
+    --input: 208 74% 20%;
+    --ring: 36 91% 55%;
+
+    --sidebar-background: 208 74% 8%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 208 74% 18%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 208 74% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 208 74% 20%;
+    --sidebar-ring: 36 91% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+@layer utilities {
+  .road-pattern {
+    background-image:
+      radial-gradient(circle at 20% 50%, hsl(36 91% 55% / 0.08) 0%, transparent 40%),
+      radial-gradient(circle at 80% 30%, hsl(215 82% 51% / 0.08) 0%, transparent 40%),
+      linear-gradient(90deg, transparent 49%, hsl(36 91% 55% / 0.04) 49%, hsl(36 91% 55% / 0.04) 51%, transparent 51%);
+    background-size: 100% 100%, 100% 100%, 60px 60px;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
