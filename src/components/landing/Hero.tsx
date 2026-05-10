@@ -13,14 +13,15 @@ const Hero = () => {
   return (
     <section
       id="inicio"
-      className="relative min-h-screen flex items-center bg-gradient-hero road-pattern overflow-hidden pt-24"
+      className="relative min-h-[90vh] lg:min-h-screen flex items-center bg-gradient-hero road-pattern overflow-hidden pt-20 pb-16"
     >
       {/* Decorative blurs */}
       <div className="absolute top-1/3 -left-24 w-96 h-96 bg-accent/20 rounded-full blur-3xl" aria-hidden />
       <div className="absolute bottom-0 right-0 w-[32rem] h-[32rem] bg-cta/15 rounded-full blur-3xl" aria-hidden />
 
-      <div className="container mx-auto px-4 relative z-10 py-16">
-        <div className="max-w-4xl">
+      <div className="container mx-auto px-4 relative z-10 py-8 lg:py-12 mt-4 lg:mt-0">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -37,24 +38,24 @@ const Hero = () => {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-foreground leading-[0.95] text-balance mb-6 drop-shadow-lg"
           >
-            Sua documentação veicular
-            <span className="block text-accent">resolvida sem burocracia.</span>
+            Assessoria Veicular de
+            <span className="block text-accent">Alto Padrão.</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
-            className="text-lg lg:text-xl text-foreground/90 max-w-2xl mb-10 leading-relaxed drop-shadow-md"
+            className="text-lg lg:text-xl text-foreground/90 max-w-2xl mb-8 leading-relaxed drop-shadow-md"
           >
-            Assumimos toda a burocracia do seu veículo. Da pré-vistoria à regularização completa, garantimos um processo seguro, ágil e livre de surpresas desagradáveis.
+            Assumimos toda a burocracia do seu veículo para que você tenha tranquilidade. Da análise cautelar à regularização completa, oferecemos uma consultoria especializada com total segurança jurídica.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-col sm:flex-row gap-4 mb-14"
+            className="flex flex-col sm:flex-row gap-4 mb-10"
           >
             <a
               href="https://wa.me/5531982927747?text=Olá!%20Quero%20um%20orçamento%20gratuito."
@@ -87,9 +88,25 @@ const Hero = () => {
                 <div className="w-9 h-9 rounded-lg bg-accent flex items-center justify-center flex-shrink-0">
                   <badge.icon className="w-4.5 h-4.5 text-primary" strokeWidth={2.5} />
                 </div>
-                <span className="text-foreground text-sm font-semibold leading-tight drop-shadow">{badge.text}</span>
+                <span className="text-foreground text-sm italic font-medium leading-tight drop-shadow">{badge.text}</span>
               </div>
             ))}
+          </motion.div>
+          </div>
+
+          {/* Right column: Image */}
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="hidden lg:block relative"
+          >
+            <div className="absolute inset-0 bg-gradient-to-tr from-accent/20 to-transparent rounded-3xl blur-2xl transform translate-x-4 translate-y-4" />
+            <img
+              src="/mulher-hero.jpg"
+              alt="Consultora Veicular"
+              className="relative z-10 w-full max-h-[60vh] object-cover rounded-3xl shadow-2xl border-4 border-background/50"
+            />
           </motion.div>
         </div>
       </div>

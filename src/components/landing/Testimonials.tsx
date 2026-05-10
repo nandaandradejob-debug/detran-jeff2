@@ -1,4 +1,4 @@
-import { Star, Quote } from "lucide-react";
+import { Star, Quote, BadgeCheck } from "lucide-react";
 import { motion } from "framer-motion";
 
 const testimonials = [
@@ -60,16 +60,22 @@ const Testimonials = () => {
               <p className="text-foreground text-base leading-relaxed mb-7">
                 "{testimonial.text}"
               </p>
-              <div className="flex items-center gap-3 pt-5 border-t border-border">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  loading="lazy"
-                  className="w-12 h-12 rounded-full object-cover border border-border"
-                />
-                <div>
-                  <div className="font-bold text-primary">{testimonial.name}</div>
-                  <div className="text-sm text-muted-foreground">{testimonial.city}</div>
+              <div className="flex items-center justify-between pt-5 border-t border-border">
+                <div className="flex items-center gap-3">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    loading="lazy"
+                    className="w-12 h-12 rounded-full object-cover border border-border"
+                  />
+                  <div>
+                    <div className="font-bold text-primary">{testimonial.name}</div>
+                    <div className="text-sm text-muted-foreground">{testimonial.city}</div>
+                  </div>
+                </div>
+                <div className="flex flex-col items-center">
+                  <BadgeCheck className="w-6 h-6 text-whatsapp mb-1" />
+                  <span className="text-[10px] uppercase font-bold text-muted-foreground tracking-wider">Verificado</span>
                 </div>
               </div>
             </motion.div>

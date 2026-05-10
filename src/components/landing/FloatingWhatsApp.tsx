@@ -7,7 +7,7 @@ const FloatingWhatsApp = () => {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Falar no WhatsApp"
-      className="fixed bottom-6 right-6 z-40 group"
+      className="fixed bottom-16 right-6 z-40 group"
     >
       <span className="absolute inset-0 rounded-full bg-whatsapp animate-pulse-ring" aria-hidden />
       <span className="relative flex items-center justify-center w-16 h-16 rounded-full bg-whatsapp text-foreground shadow-2xl hover:scale-110 transition-transform">

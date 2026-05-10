@@ -4,23 +4,23 @@ import { motion } from "framer-motion";
 const pillars = [
   {
     icon: Landmark,
-    title: "Segurança e Conformidade em Cada Processo",
-    desc: "Atuação pautada na legalidade e transparência, garantindo respaldo técnico em todas as etapas.",
+    title: "Segurança Jurídica",
+    desc: "Atuamos com total transparência e rigor técnico, garantindo que seu veículo esteja 100% regularizado e livre de riscos.",
   },
   {
     icon: Zap,
-    title: "Velocidade na Execução",
-    desc: "Tratamos seu processo como prioridade, otimizando cada etapa junto aos órgãos de trânsito.",
+    title: "Agilidade sem Burocracia",
+    desc: "Otimizamos cada etapa do seu processo nos órgãos de trânsito para entregar resultados no menor tempo possível.",
   },
   {
     icon: MessageCircleHeart,
-    title: "Suporte Direto e Especializado",
-    desc: "Sem robôs ou respostas prontas. Você fala diretamente com consultores que entendem e resolvem o problema.",
+    title: "Atendimento Premium",
+    desc: "Esqueça robôs e respostas genéricas. Aqui você tem acesso direto a especialistas focados em resolver o seu problema.",
   },
   {
     icon: MapPinned,
-    title: "Domínio do Ecossistema Local",
-    desc: "Amplo relacionamento e conhecimento prático dos trâmites no Detran-MG para uma resolução imediata.",
+    title: "Especialistas no Detran-MG",
+    desc: "Anos de experiência com os trâmites locais nos permitem destravar processos com máxima eficiência e rapidez.",
   },
 ];
 

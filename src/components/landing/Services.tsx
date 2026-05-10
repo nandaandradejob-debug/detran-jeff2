@@ -15,47 +15,47 @@ export const services = [
   {
     icon: Car,
     title: "Transferência de Propriedade",
-    desc: "Assessoria completa de ponta a ponta para transferência, garantindo segurança jurídica na compra ou venda.",
+    desc: "Transferimos a propriedade do seu veículo com total segurança jurídica, blindando você contra fraudes e pendências de terceiros.",
   },
   {
     icon: ClipboardList,
     title: "Primeiro Emplacamento",
-    desc: "Processo ágil para o seu veículo novo rodar em total conformidade com as exigências do Detran.",
+    desc: "Regularizamos seu veículo zero km com rapidez e total conformidade para que você rode com tranquilidade.",
   },
   {
     icon: RefreshCw,
     title: "Licenciamento Anual (CRLV)",
-    desc: "Atualização do seu documento de rodagem anual de forma remota, rápida e sem necessidade de enfrentar filas.",
+    desc: "Mantenha seu veículo regularizado sem sair de casa. Cuidamos de todo o processo de emissão do CRLV digital.",
   },
   {
     icon: FileText,
     title: "2ª Via de Documentos",
-    desc: "Emissão ágil de segundas vias para manter a conformidade do seu prontuário sem estresse.",
+    desc: "Recuperação imediata e emissão de segundas vias para manter seu prontuário impecável.",
   },
   {
     icon: Ban,
     title: "Baixa de Restrições",
-    desc: "Análise e regularização de pendências administrativas, multas e restrições legais do seu prontuário.",
+    desc: "Análise aprofundada e resolução definitiva de bloqueios administrativos, multas e restrições legais.",
   },
   {
     icon: Tag,
     title: "Placas Automotivas",
-    desc: "Fornecimento e instalação de placas padrão Mercosul com total rigor técnico e homologação.",
+    desc: "Emissão e estampagem de placas Mercosul com homologação oficial, seguindo rigorosos padrões técnicos.",
   },
   {
     icon: Truck,
     title: "Gestão de Frota",
-    desc: "Terceirização completa da gestão documental da sua frota comercial, focada em eficiência e compliance.",
+    desc: "Terceirize a burocracia da sua empresa. Gestão documental estratégica para maximizar a eficiência da sua frota.",
   },
   {
     icon: Scale,
     title: "Recursos de Multas",
-    desc: "Análise e defesa especializada para recursos de multas e pontuação na CNH.",
+    desc: "Defesa especializada para proteção da sua CNH. Análise técnica de infrações e elaboração de recursos consistentes.",
   },
   {
     icon: ClipboardCheck,
     title: "Pré Vistoria",
-    desc: "Análise cautelar rigorosa para atestar a procedência e a integridade estrutural do veículo antes da negociação.",
+    desc: "Evite prejuízos. Avaliação técnica minuciosa para garantir a procedência e integridade do veículo antes da compra.",
   },
 ];
 

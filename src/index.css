@@ -127,4 +127,22 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .shadow-glow {
+    box-shadow: 0 0 20px hsl(var(--accent) / 0.2);
+  }
+
+  .shadow-elegant {
+    box-shadow: 0 10px 40px -10px hsl(var(--foreground) / 0.1);
+  }
 }

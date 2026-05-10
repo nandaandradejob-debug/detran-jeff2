@@ -33,13 +33,9 @@ const Navbar = () => {
       )}
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
-        <a href="#inicio" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center shadow-glow group-hover:scale-110 transition-transform">
-            <Car className="w-5 h-5 text-primary" strokeWidth={2.5} />
-          </div>
-          <span className="font-display text-2xl tracking-wide text-foreground">
-            JEFF <span className="text-accent">VEICULAR</span>
-          </span>
+        <a href="#inicio" className="flex items-center group py-2">
+          <img src="/logo-light.svg" alt="Jeff Veicular" className="h-16 w-auto object-contain dark:hidden transition-transform group-hover:scale-105" />
+          <img src="/logo-dark.svg" alt="Jeff Veicular" className="hidden dark:block h-16 w-auto object-contain transition-transform group-hover:scale-105" />
         </a>
 
         <nav className="hidden lg:flex items-center gap-8">

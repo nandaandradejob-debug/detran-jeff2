@@ -7,13 +7,9 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12 mb-14">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2 mb-5">
-              <div className="w-10 h-10 rounded-lg bg-accent flex items-center justify-center">
-                <Car className="w-5 h-5 text-primary" strokeWidth={2.5} />
-              </div>
-              <span className="font-display text-2xl tracking-wide">
-                JEFF <span className="text-accent">VEICULAR</span>
-              </span>
+            <div className="flex items-center mb-5">
+              <img src="/logo-light.svg" alt="Jeff Veicular" className="h-10 w-auto dark:hidden" />
+              <img src="/logo-dark.svg" alt="Jeff Veicular" className="hidden dark:block h-10 w-auto" />
             </div>
             <p className="text-foreground/85 leading-relaxed text-sm">
               Somos especialistas em desembaraço documental automotivo, oferecendo soluções completas para pessoas físicas e frotas em Belo Horizonte e região.
